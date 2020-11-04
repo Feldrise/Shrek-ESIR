@@ -14,9 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Conversion Shrek',
       theme: ThemeData(
+        brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.green[900],
         // cardColor: applicationStyle.cardColor,
-        // primaryColor: Colors.white,
+        primaryColor: Colors.green,
         accentColor: Colors.green,
 
         // cardTheme: CardTheme(
@@ -29,13 +30,13 @@ class MyApp extends StatelessWidget {
         // ),
 
         textTheme: const TextTheme(
-          headline6: TextStyle(fontSize: 38.0, fontWeight: FontWeight.w500, color: Colors.white),
-          subtitle2: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w200, color: Colors.white),
-          headline5: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w500, color: Colors.white),
-          subtitle1: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w300, color: Colors.white),
-          bodyText2: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: Colors.white),
-          bodyText1: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: Colors.white),
-          caption: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: Colors.white)
+          headline6: TextStyle(fontSize: 38.0, fontWeight: FontWeight.w500,),
+          subtitle2: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w200,),
+          headline5: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w500,),
+          subtitle1: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w300,),
+          bodyText2: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400,),
+          bodyText1: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400),
+          caption: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400,)
         ),
       ),
       

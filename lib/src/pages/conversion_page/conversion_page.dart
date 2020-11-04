@@ -21,13 +21,19 @@ class ConversionPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              color: Theme.of(context).scaffoldBackgroundColor,
+              padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
+              child: const Text("Vous pouvez appuyer sur chacune des valeurs pour les modifiers."),
+            ),
+            const SizedBox(height: 32.0,),
             SizedBox(
               width: double.infinity,
               child: Clock()
             ),
             const SizedBox( height: 32.0 ,),
             Button(
-              onPressed: null, 
+              onPressed: _conversion, 
               text: "Convertir l'heure"
             )
           ],
@@ -36,17 +42,7 @@ class ConversionPage extends StatelessWidget {
     );
   }
 
-  // Future _changeTime() async {
-  //   TimeOfDay time = await showTimePicker(
-  //     context: context,
-  //     initialTime: TimeOfDay.fromDateTime(_convertedTime)
-  //   );
-
-
-  //   if(time != null) {
-  //     final now = DateTime.now();
-
-  //     // setSd 
-  //   }
-  // }
+  Future _conversion() async {
+    
+  }
 }

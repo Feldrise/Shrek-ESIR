@@ -2,17 +2,32 @@ import 'package:flutter/material.dart';
 import 'package:shrek_esir/models/time.dart';
 
 class TimeStore with ChangeNotifier {
-  Time _time;
+  final Time _time;
 
   TimeStore(Time time) : _time = time;
 
-  TimeStore.fromValues({int hours, int minutes, int seconds}) {
-    // TODO: faire en sorte de pouvoir mettre plus de 60 aux 
-    // secondes et minutes
+  TimeStore.fromValues({int hours, int minutes, int seconds}) :
     _time = Time(hours: hours, minutes: minutes, seconds: seconds);
+
+  int get hours => _time.hours;
+  int get minutes => _time.minutes;
+  int get seconds => _time.seconds;
+
+  void updateHours(int newHours) {
+    _time.hours = newHours;
+
+    notifyListeners();
   }
 
-  String get hours => _time.hours.toString();
-  String get minutes => _time.minutes.toString();
-  String get seconds => _time.seconds.toString();
+  void updateMinutes(int newMinutes) {
+    _time.minutes = newMinutes;
+
+    notifyListeners();
+  }
+
+  void updateSeconds(int newSeconds) {
+    _time.seconds = newSeconds;
+
+    notifyListeners();
+  }
 }
