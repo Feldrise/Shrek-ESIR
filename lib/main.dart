@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shrek_esir/src/pages/main_page/main_page.dart';
+import 'package:shrek_esir/src/providers/time_store.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,7 +39,10 @@ class MyApp extends StatelessWidget {
         ),
       ),
       
-      home: MainPage(),
+      home: ChangeNotifierProvider(
+        create: (context) => TimeStore.fromValues(hours:  0, minutes: 0, seconds: 1),
+        builder: (context, _) => MainPage(),
+      ),
     );
   }
 }

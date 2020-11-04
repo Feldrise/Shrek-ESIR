@@ -16,7 +16,7 @@ class InfoPage extends StatelessWidget {
           )
         ),
         child: const Center(
-          child: Text("Conversion"),
+          child: Text("Info"),
         ),
       ),
     );
