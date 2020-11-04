@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Conversion Shrek',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.green[900],
         // cardColor: applicationStyle.cardColor,

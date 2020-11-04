@@ -7,9 +7,17 @@ class InfoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("Info"),
+    return Scaffold(
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/backgrounds/bg_info.png"),
+            fit: BoxFit.cover
+          )
+        ),
+        child: const Center(
+          child: Text("Conversion"),
+        ),
       ),
     );
   }
