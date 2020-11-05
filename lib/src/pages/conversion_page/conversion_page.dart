@@ -64,15 +64,15 @@ class _ConversionPageState extends State<ConversionPage> {
     final int totalSeconds = timeStore.inSeconds;
 
     // Pour faire la conversion :
-    //  - 1 chat = 1 seconds
-    //  - 1 ane = 360 chats = 6 minutes
-    //  - 1 shrek = 10 anes = 10
+    //  - 1 chat = 20 seconds
+    //  - 1 ane = 18 chats = 6 minutes
+    //  - 1 shrek = 10 anes = 1 heure
     setState(() {
-      _nbChats = totalSeconds;
+      _nbChats = totalSeconds ~/ 20 ;
 
-      if (_nbChats >= 360) {
-        _nbAnes = _nbChats ~/ 360;
-        _nbChats = _nbChats % 360; 
+      if (_nbChats >= 18) {
+        _nbAnes = _nbChats ~/ 18;
+        _nbChats = _nbChats % 18; 
       }
       else {
         _nbAnes = 0;
