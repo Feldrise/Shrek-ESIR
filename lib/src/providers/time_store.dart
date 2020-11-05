@@ -13,6 +13,15 @@ class TimeStore with ChangeNotifier {
   int get minutes => _time.minutes;
   int get seconds => _time.seconds;
 
+  int get inSeconds {
+    int total = seconds;
+
+    total += minutes * 60;
+    total += hours * 60 * 60;
+
+    return total;
+  }
+
   void updateHours(int newHours) {
     _time.hours = newHours;
 

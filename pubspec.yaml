@@ -43,6 +43,10 @@ flutter:
   assets:
     - assets/backgrounds/bg_conversion.png
     - assets/backgrounds/bg_info.png
+    - assets/shrek.png
+    - assets/ane.png
+    - assets/chat.png
+    
     # An image asset can refer to one or more resolution-specific "variants", see
     # https://flutter.dev/assets-and-images/#resolution-aware.
     # For details regarding adding assets from package dependencies, see
