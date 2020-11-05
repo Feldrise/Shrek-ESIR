@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  assets_audio_player: ^2.0.12
   cupertino_icons: ^1.0.0
   provider: ^4.3.2+2
   url_launcher: ^5.7.10
@@ -47,6 +48,7 @@ flutter:
     - assets/shrek.png
     - assets/ane.png
     - assets/chat.png
+    - assets/audio/convert.mp3
     # An image asset can refer to one or more resolution-specific "variants", see
     # https://flutter.dev/assets-and-images/#resolution-aware.
     # For details regarding adding assets from package dependencies, see

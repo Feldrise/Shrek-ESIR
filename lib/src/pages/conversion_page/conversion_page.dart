@@ -1,3 +1,4 @@
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shrek_esir/src/pages/conversion_page/widgets/clock.dart';
@@ -17,7 +18,19 @@ class ConversionPage extends StatefulWidget {
 class _ConversionPageState extends State<ConversionPage> {
   int _nbShreks = 0;
   int _nbAnes = 0;
-  int _nbChats = 1;
+  int _nbChats = 0;
+
+  final AssetsAudioPlayer _audio = AssetsAudioPlayer.newPlayer();
+
+  @override
+  void initState() {
+    super.initState();
+
+    _audio.open(
+      Audio("assets/audio/convert.mp3"),
+      autoStart: false
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +75,8 @@ class _ConversionPageState extends State<ConversionPage> {
   Future _conversion() async {
     final TimeStore timeStore = Provider.of<TimeStore>(context, listen: false);
     final int totalSeconds = timeStore.inSeconds;
+
+    _audio.play();
 
     // Pour faire la conversion :
     //  - 1 chat = 20 seconds

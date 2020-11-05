@@ -1,16 +1,21 @@
-# shrek_esir
+# Shrek ESIR
 
-A new Flutter project.
+Voici une application de l'ESIR qui vous aide à vous mettre sur le système horraire esirien.
 
-## Getting Started
+![Screen 1](https://feldrise.com/shrek_esir/screen2.png)
+![Screen 2](https://feldrise.com/shrek_esir/screen3.png)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Téléchargement
+l'APK est déposé dans [les releases](https://github.com/Feldrise/Shrek-ESIR/releases);
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Autrement, vous pouvez télécharger ou utiliser l'application sur :
+ - [Le web](https://feldrise.com/shrek_esir)
+ - ~~[Le Playstore](https://play.google.com)~~ *(a venir)*
+ - ~~[L'AppStore](https://apple.com)~~ *(a venir)*
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Conversion 
+Pour faire la conversion :
+ - 1 chat = 20 seconds
+ - 1 ane = 18 chats = 6 minutes
+ - 1 shrek = 10 anes = 1 heure
