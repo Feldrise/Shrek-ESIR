@@ -2,9 +2,7 @@
 
 Voici une application de l'ESIR qui vous aide à vous mettre sur le système horraire esirien.
 
-![Screen 1](https://feldrise.com/shrek_esir/screen2.png)
-![Screen 2](https://feldrise.com/shrek_esir/screen3.png)
-
+![Screens](https://feldrise.com/shrek_esir/screens.png)
 
 ## Téléchargement
 l'APK est déposé dans [les releases](https://github.com/Feldrise/Shrek-ESIR/releases);
